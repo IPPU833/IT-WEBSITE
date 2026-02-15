@@ -172,6 +172,11 @@
             //     $(".hamburger").show();
             // });
 
+            $(".menu").click(function () {
+                $("nav").slideToggle();
+                $(this).toggleClass("active");
+            });
+
             $(".portfolio-filter .btn").click(function () {
                 $(".portfolio-filter .btn").removeClass("active");
                 $(this).addClass("active");
